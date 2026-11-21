@@ -99,12 +99,12 @@ export function AccountSettings() {
 					<p>
 						In compliance with AGPL-3.0, the corresponding source code for this application is publicly available at{" "}
 						<a
-							href="https://github.com/Bhuvan2402-bhuvan/mailflare"
+							href="https://github.com/Bhuvan2402-bhuvan/mail"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-neutral-900 underline hover:text-neutral-700"
 						>
-							GitHub (Bhuvan2402-bhuvan/mailflare)
+							GitHub (Bhuvan2402-bhuvan/mail)
 						</a>.
 					</p>
 				</div>

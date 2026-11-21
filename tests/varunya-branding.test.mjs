@@ -13,7 +13,7 @@ test("varunya branding: en.json contains zero customer-facing Mailflare occurren
 
 test("varunya branding: update system points to fork repository", () => {
 	const updateUtils = readFileSync(join(root, "src/app/api/admin/update/utils.ts"), "utf8");
-	assert.match(updateUtils, /UPDATE_SOURCE_REPOSITORY = "Bhuvan2402-bhuvan\/mailflare"/);
+	assert.match(updateUtils, /UPDATE_SOURCE_REPOSITORY = "Bhuvan2402-bhuvan\/mail"/);
 	assert.match(updateUtils, /"User-Agent": "varunya-mail"/);
 });
 
@@ -21,7 +21,7 @@ test("varunya branding: sidebar footer displays Varunya Mail and preserves AGPL-
 	const sidebarFooter = readFileSync(join(root, "src/components/sidebar-footer.tsx"), "utf8");
 	assert.match(sidebarFooter, /Varunya Mail v\{packageJson\.version\}/);
 	assert.match(sidebarFooter, /Your email\. Your workspace\./);
-	assert.match(sidebarFooter, /https:\/\/github\.com\/Bhuvan2402-bhuvan\/mailflare/);
+	assert.match(sidebarFooter, /https:\/\/github\.com\/Bhuvan2402-bhuvan\/mail/);
 	assert.match(sidebarFooter, /Source Code \(AGPL-3\.0\)/);
 });
 

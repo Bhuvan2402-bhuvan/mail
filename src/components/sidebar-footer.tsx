@@ -46,7 +46,7 @@ export function PoweredBy({ className = "px-1" }: { className?: string }) {
         </p>
         <p>
           <a
-            href="https://github.com/Bhuvan2402-bhuvan/mailflare"
+            href="https://github.com/Bhuvan2402-bhuvan/mail"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-neutral-600 hover:underline transition-colors"
