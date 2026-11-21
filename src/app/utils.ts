@@ -39,7 +39,7 @@ export const heroMessages: MailPreview[] = [
 	},
 	{
 		icon: MailCheck,
-		sender: "admin@mailflare.dev",
+		sender: "admin@varunyamail.com",
 		subjectKey: "home.msg4.subject",
 		previewKey: "home.msg4.preview",
 		badgeKey: "home.msg4.badge",

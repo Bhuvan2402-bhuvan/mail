@@ -10,7 +10,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     env:
-      UPDATE_SOURCE_REPOSITORY: ${{ vars.UPDATE_SOURCE_REPOSITORY || 'hieunc229/mailflare' }}
+      UPDATE_SOURCE_REPOSITORY: ${{ vars.UPDATE_SOURCE_REPOSITORY || 'Bhuvan2402-bhuvan/mailflare' }}
 
     steps:
       - name: Check update token
@@ -57,7 +57,7 @@ jobs:
             echo "Repository is already up to date."
             exit 0
           fi
-          git commit -m "Update Mailflare from ${UPDATE_SOURCE_REPOSITORY}@${upstream_branch}"
+          git commit -m "Update Varunya Mail from ${UPDATE_SOURCE_REPOSITORY}@${upstream_branch}"
 
       - name: Push update
         run: |

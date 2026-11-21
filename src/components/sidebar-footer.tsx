@@ -34,21 +34,15 @@ export function SidebarFooter() {
   );
 }
 
-/** The "Powered by Mailflare vX" credit, shared by the mail and Drive sidebars. */
+/** The Varunya Mail footer credit and source link, shared by the mail and Drive sidebars. */
 export function PoweredBy({ className = "px-1" }: { className?: string }) {
-	const { t } = useLanguage();
 	return (
       <div className={`${className} flex flex-col gap-0.5 text-[11px] text-neutral-500`}>
-        <p>
-          {t("navigation.poweredBy")}{" "}
-          <a
-            href={`https://mailflare.co/?ref=${typeof window !== "undefined" ? location.hostname : ""}&v=${packageJson.version}`}
-            target="_blank"
-            className="hover:underline text-neutral-500"
-            rel="noreferrer"
-          >
-            Mailflare v{packageJson.version}
-          </a>
+        <p className="font-medium text-neutral-600">
+          Varunya Mail v{packageJson.version}
+        </p>
+        <p className="text-[10px] text-neutral-400">
+          Your email. Your workspace.
         </p>
         <p>
           <a
