@@ -2502,5 +2502,14 @@
 	"account.openApps": "Apri il menu delle app",
 	"account.signOutAccountConfirm": "Disconnettere {name} ({email})? Dovrai accedere di nuovo per usare questo account.",
 	"invite.acceptedLabel": "Accettato",
-	"invite.declinedLabel": "Rifiutato"
+	"invite.declinedLabel": "Rifiutato",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }

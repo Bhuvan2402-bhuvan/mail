@@ -2487,5 +2487,14 @@
 	"account.openApps": "ஆப்ஸ் மெனுவைத் திற",
 	"account.signOutAccountConfirm": "{name} ({email}) கணக்கிலிருந்து வெளியேறவா? இந்தக் கணக்கைப் பயன்படுத்த மீண்டும் உள்நுழைய வேண்டும்.",
 	"invite.acceptedLabel": "ஏற்கப்பட்டது",
-	"invite.declinedLabel": "நிராகரிக்கப்பட்டது"
+	"invite.declinedLabel": "நிராகரிக்கப்பட்டது",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }

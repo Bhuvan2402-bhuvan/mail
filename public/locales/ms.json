@@ -2483,5 +2483,18 @@
 	"account.openApps": "Buka menu apl",
 	"account.signOutAccountConfirm": "Log keluar {name} ({email})? Anda perlu log masuk semula untuk menggunakan akaun ini.",
 	"invite.acceptedLabel": "Diterima",
-	"invite.declinedLabel": "Ditolak"
+	"invite.declinedLabel": "Ditolak",
+	"note.count.one": "{count} note",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target}).",
+	"passkey.count.one": "{count} passkey",
+	"twoStep.passkeysAvailable.one": "{count} passkey can confirm a password sign-in.",
+	"twoStep.authenticatorOn.one": "Set up · {count} recovery code left."
 }

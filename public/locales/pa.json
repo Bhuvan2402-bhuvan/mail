@@ -2487,5 +2487,14 @@
 	"account.openApps": "ਐਪਸ ਮੀਨੂ ਖੋਲ੍ਹੋ",
 	"account.signOutAccountConfirm": "{name} ({email}) ਨੂੰ ਸਾਈਨ ਆਉਟ ਕਰਨਾ ਹੈ? ਇਸ ਖਾਤੇ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਸਾਈਨ ਇਨ ਕਰਨਾ ਪਵੇਗਾ।",
 	"invite.acceptedLabel": "ਸਵੀਕਾਰ ਕੀਤਾ",
-	"invite.declinedLabel": "ਰੱਦ ਕੀਤਾ"
+	"invite.declinedLabel": "ਰੱਦ ਕੀਤਾ",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }

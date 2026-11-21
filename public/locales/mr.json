@@ -2487,5 +2487,14 @@
 	"account.openApps": "अ‍ॅप्स मेनू उघडा",
 	"account.signOutAccountConfirm": "{name} ({email}) साइन आउट करायचे? हे खाते वापरण्यासाठी तुम्हाला पुन्हा साइन इन करावे लागेल.",
 	"invite.acceptedLabel": "स्वीकारले",
-	"invite.declinedLabel": "नाकारले"
+	"invite.declinedLabel": "नाकारले",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }

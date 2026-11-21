@@ -2502,5 +2502,14 @@
 	"account.openApps": "Abrir o menu de aplicações",
 	"account.signOutAccountConfirm": "Terminar a sessão de {name} ({email})? Terá de iniciar sessão novamente para utilizar esta conta.",
 	"invite.acceptedLabel": "Aceite",
-	"invite.declinedLabel": "Recusado"
+	"invite.declinedLabel": "Recusado",
+	"auth.forgot.hint": "Utilize o e-mail com o qual inicia sessão. A ligação é enviada para o e-mail de recuperação guardado na sua conta.",
+	"update.autoUpdate": "Atualizar automaticamente",
+	"update.autoUpdateHint": "Instalar novos lançamentos e alterações na base de dados automaticamente.",
+	"update.autoUpdateFailed": "Não foi possível guardar a configuração de atualização automática",
+	"update.channel": "Atualizar quando houver",
+	"update.channelRelease": "Uma nova versão",
+	"update.channelCommit": "Qualquer nova alteração",
+	"update.availableCommits.one": "{count} nova alteração está disponível (mais recente {target}).",
+	"update.availableCommits.other": "{count} novas alterações estão disponíveis (mais recente {target})."
 }

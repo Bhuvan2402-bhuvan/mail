@@ -2487,5 +2487,14 @@
 	"account.openApps": "એપ્સ મેનુ ખોલો",
 	"account.signOutAccountConfirm": "{name} ({email}) સાઇન આઉટ કરવું છે? આ એકાઉન્ટનો ઉપયોગ કરવા માટે તમારે ફરીથી સાઇન ઇન કરવું પડશે.",
 	"invite.acceptedLabel": "સ્વીકાર્યું",
-	"invite.declinedLabel": "નકારાયું"
+	"invite.declinedLabel": "નકારાયું",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }

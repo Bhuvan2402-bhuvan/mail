@@ -191,13 +191,22 @@ test("owners and shared mailbox grants keep their existing settings permissions"
 	assert.equal((await f.patch("sam", "m-shared", { displayName: "Shared Updated" })).status, 200);
 });
 
-test("administrative mailbox settings preserve the account license requirement", async t => {
-	for (const plan of ["community", "pro"]) {
-		const f = await fixture(t, plan);
-		assert.equal((await f.read("primary", "m-sam")).status, plan === "pro" ? 200 : 404);
-		assert.equal((await f.patch("primary", "m-sam", { displayName: "Licensed" })).status, plan === "pro" ? 200 : 404);
-		assert.equal((await f.patch("sam", "m-sales", { displayName: "My Sales" })).status, 200);
-	}
+test("administrative mailbox settings: authorized admins can manage mailboxes natively while unauthorized users are blocked", async t => {
+	const f = await fixture(t);
+	// Authorized primary admin can view and update user mailbox settings natively without commercial paywalls
+	assert.equal((await f.read("primary", "m-sam")).status, 200);
+	assert.equal((await f.patch("primary", "m-sam", { displayName: "Admin Updated" })).status, 200);
+
+	// Mailbox owner can update their own mailbox
+	assert.equal((await f.patch("sam", "m-sales", { displayName: "My Sales" })).status, 200);
+
+	// Unauthorized non-admin user cannot view or manage another user's mailbox
+	assert.equal((await f.read("remote", "m-sam")).status, 404);
+	assert.equal((await f.patch("remote", "m-sam", { displayName: "Exploit" })).status, 404);
+
+	// Unauthenticated request with invalid token throws UnauthorizedError (translates to 401 in Next.js runtime)
+	const unauthReq = new Request("https://mail.test/api/mailboxes/m-sam", { headers: { Authorization: "Bearer invalid-token" } });
+	await assert.rejects(async () => detail.GET(unauthReq, context("m-sam")), (err) => err?.digest === "NEXT_HTTP_ERROR_FALLBACK;401" || err?.name === "UnauthorizedError");
 });
 
 test("administrators can manage aliases within the mailbox's domain-owner scope", async t => {

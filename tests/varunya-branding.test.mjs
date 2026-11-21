@@ -39,3 +39,26 @@ test("varunya branding: database default appName 'Mailflare' normalizes to 'Varu
 	assert.match(brandingService, /DEFAULT_APP_NAME = "Varunya Mail"/);
 	assert.match(brandingService, /!rawName \|\| rawName === "Mailflare"/);
 });
+
+test("varunya branding: calendar feeds, webhooks, backups and assistant identify as Varunya Mail", () => {
+	const feed = readFileSync(join(root, "src/lib/calendar/feed.ts"), "utf8");
+	assert.match(feed, /PRODID:-\/\/Varunya Mail\/\/Calendar\/\/EN/);
+
+	const invite = readFileSync(join(root, "src/lib/calendar/invite.ts"), "utf8");
+	assert.match(invite, /PRODID:-\/\/Varunya Mail\/\/Calendar\/\/EN/);
+
+	const calUtils = readFileSync(join(root, "src/lib/calendar/utils.ts"), "utf8");
+	assert.match(calUtils, /PRODID:-\/\/Varunya Mail\/\/Calendar\/\/EN/);
+
+	const webhook = readFileSync(join(root, "src/lib/email/webhooks.ts"), "utf8");
+	assert.match(webhook, /subject: "Varunya Mail test delivery"/);
+
+	const backup = readFileSync(join(root, "src/lib/backups/export.ts"), "utf8");
+	assert.match(backup, /not a valid Varunya Mail backup/);
+
+	const agentTools = readFileSync(join(root, "src/lib/agent/tools.ts"), "utf8");
+	assert.match(agentTools, /Open the draft in Varunya Mail to review delivery/);
+
+	const calTools = readFileSync(join(root, "src/lib/calendar/tools.ts"), "utf8");
+	assert.match(calTools, /review and approve it in Varunya Mail/);
+});

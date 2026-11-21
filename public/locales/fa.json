@@ -2487,5 +2487,14 @@
 	"account.openApps": "باز کردن منوی برنامه‌ها",
 	"account.signOutAccountConfirm": "از {name} ({email}) خارج می‌شوید؟ برای استفاده از این حساب باید دوباره وارد شوید.",
 	"invite.acceptedLabel": "پذیرفته‌شده",
-	"invite.declinedLabel": "ردشده"
+	"invite.declinedLabel": "ردشده",
+	"auth.forgot.hint": "Use the email you sign in with. The link is sent to the recovery email saved on your account.",
+	"update.autoUpdate": "Update automatically",
+	"update.autoUpdateHint": "Install new releases and database changes on their own.",
+	"update.autoUpdateFailed": "Could not save the auto-update setting",
+	"update.channel": "Update when there is",
+	"update.channelRelease": "A new version",
+	"update.channelCommit": "Any new change",
+	"update.availableCommits.one": "{count} new change is available (latest {target}).",
+	"update.availableCommits.other": "{count} new changes are available (latest {target})."
 }
